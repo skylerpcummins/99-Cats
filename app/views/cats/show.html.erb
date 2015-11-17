@@ -1,0 +1,19 @@
+<h1>Cats#show</h1>
+<p>Find me in app/views/cats/show.html.erb</p>
+
+<b> Cat Attributes </b>
+  <ul>
+    <% @cat.attributes.take(@cat.attributes.length - 2).each do |k,v| %>
+      <li> <%= "#{k.capitalize} is #{v}" %> </li>
+    <% end %>
+  </ul>
+
+
+
+
+
+<!-- <table>
+  <tr> <% @cat.att
+    <td> Cat Name</td>
+    <td> Birthday </td>
+     -->
