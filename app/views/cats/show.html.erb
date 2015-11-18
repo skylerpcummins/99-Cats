@@ -1,5 +1,4 @@
-<h1>Cats#show</h1>
-<p>Find me in app/views/cats/show.html.erb</p>
+<h1><%= @cat.name %> </h1>
 
 <b> Cat Attributes </b>
   <ul>
@@ -7,6 +6,8 @@
       <li> <%= "#{k.capitalize} is #{v}" %> </li>
     <% end %>
   </ul>
+
+<%= link_to "Edit Cat", edit_cat_path %>
 
 
 

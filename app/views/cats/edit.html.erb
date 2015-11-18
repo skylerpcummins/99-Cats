@@ -1,0 +1,7 @@
+<h3>Edit Cat</h3>
+
+<%= render partial: 'form' , locals: {
+  cat: @cat,
+  button_text: "Update Cat",
+  method_name: "PATCH",
+  url: cat_url(@cat.id)} %>
